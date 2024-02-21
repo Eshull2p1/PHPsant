@@ -22,4 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/login', [UserController::class, 'store']); 
 Route::middleware('auth:sanctum')->delete('/logout', [UserController::class, 'destroy']);
 
-Route::resource('Product',ProductController::class)->middleware('auth:sanctum');
+Route::resource('/Product',ProductController::class)->middleware('auth:sanctum');
